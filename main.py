@@ -15,8 +15,8 @@ with st.form("email_form",clear_on_submit=True):
     msgbox=st.text_input("Comments")
     submitbutton=st.form_submit_button("Submit")
 
-ph=str(phone)+"@c.us"
-
+ph=str(phone+"@c.us")
+print(ph)
 def course():
     if excel==True:
         ex="excel"
