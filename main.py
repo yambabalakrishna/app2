@@ -35,7 +35,7 @@ if submitbutton:
     l=[msg]
     print(l)
     def main():
-        response = greenAPI.sending.sendMessage('9010300087@c.us', msg)
+        response = greenAPI.sending.sendMessage(ph, msg)
 
         print(response.data)
 
