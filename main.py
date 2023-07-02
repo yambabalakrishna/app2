@@ -8,7 +8,7 @@ st.subheader("Fill the below details")
 with st.form("email_form",clear_on_submit=True):
     name=st.text_input("Your Name")
     email=st.text_input("Your Email Address")
-    phone=st.text_input("your Phone Number")
+    phone=st.text_input("your 10 digits Phone Number")
     excel=st.checkbox("Excel")
     sql=st.checkbox("SQL")
     vba=st.checkbox("VBA")
