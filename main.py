@@ -15,6 +15,8 @@ with st.form("email_form",clear_on_submit=True):
     msgbox=st.text_input("Comments")
     submitbutton=st.form_submit_button("Submit")
 
+ph=str(phone)+"@c.us"
+
 def course():
     if excel==True:
         ex="excel"
@@ -26,13 +28,14 @@ def course():
         ex="VBA"
         return ex
 c=course()
-msg="Hey, I am " + name + ", my phone number is " + str(phone) + ", Email is " + email + " and i am interested in " + c
+cc=str(c)
+msg="Hey, I am " + name + ", my phone number is " + str(phone) + ", Email is " + email + " and i am interested in " + cc
 
 if submitbutton:
     l=[msg]
     print(l)
     def main():
-        response = greenAPI.sending.sendMessage("9908818293@c.us", msg)
+        response = greenAPI.sending.sendMessage(ph, msg)
 
         print(response.data)
 
